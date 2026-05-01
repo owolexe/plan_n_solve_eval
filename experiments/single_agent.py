@@ -57,7 +57,7 @@ if __name__ == "__main__":
     problems = load_eval_problems(r"C:\CSE188\plan_n_solve_eval\data\HumanEval.jsonl")
     
     # Run a pilot test on the first problem with zero-shot agent
-    result = run_single_agent_eval(problems[0], agentType="zero-shot")
+    result = run_single_agent_eval(problems[0], agentType="plan-and-solve")
     
     print(f"--- RAW RESPONSE ---\n{result['response']}")
     print(f"agent type: {result['agent_type']}")

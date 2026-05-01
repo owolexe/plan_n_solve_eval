@@ -10,8 +10,8 @@ def main():
     
     results = []
     
-    #for problem in problems:
-    for problem in problems[:50]:  
+    for problem in problems:
+    #for problem in problems[:50]:  
         task_id = problem['task_id']
         print (f"Evaluating Task ID: {task_id}")
         # Run multi-agent evaluation
